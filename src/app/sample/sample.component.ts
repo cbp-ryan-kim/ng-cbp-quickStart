@@ -4,10 +4,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sample.component.html',
 })
 export class SampleComponent implements OnInit {
+  firstName: string;
+  lastName: string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  displayName(): void {
+    alert(this.firstName + " " + this.lastName);
   }
 
 }

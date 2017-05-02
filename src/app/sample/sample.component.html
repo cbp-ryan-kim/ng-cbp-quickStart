@@ -1,5 +1,11 @@
 <h2>Sample</h2>
 
-<p>
-  sample works!
-</p>
+<md-input-container>
+  <input mdInput placeholder="First name" [(ngModel)]="firstName">
+</md-input-container>
+
+<md-input-container>
+  <input mdInput placeholder="Last name" [(ngModel)]="lastName">
+</md-input-container>
+
+<button md-raised-button (click)="displayName()">Display name</button>
