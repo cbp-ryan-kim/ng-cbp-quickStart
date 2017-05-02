@@ -4,13 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SampleComponent } from './sample/sample.component';
+import { IconsComponent } from './icons/icons.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SampleComponent,
+    IconsComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
     HttpModule,
